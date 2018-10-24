@@ -16,13 +16,13 @@
 <?php
 	//campos
    $v_cod_factura=$_GET["codigo_factura"];
-   $v_nom_cliente="'".$_GET["nombre_cliente"]."'";
+   $v_cod_cliente=$_GET["codigo_cliente"];
    $v_valor_factura=$_GET["valor_factura"];
 
 
-$conexion = pg_connect("host=localhost port=5432 dbname=Ventas user=postgres password=123"); //conexion
+$conexion = pg_connect("host=localhost port=5432 dbname=VENTAS user=postgres password=123"); //conexion
 
-$sql ="INSERT INTO factura VALUES($v_cod_factura, $v_nom_cliente, $v_valor_factura)";
+$sql ="INSERT INTO factura VALUES($v_cod_factura, $v_valor_factura, $v_cod_cliente)";
 
 $result = pg_Exec($conexion, $sql);
 
