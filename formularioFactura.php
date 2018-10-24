@@ -9,7 +9,7 @@
    <CENTER><td colspan="2" align="center"><h2>ADICIONANDO FACTURAS</h2></td></center>
    <table align="center" width="255" cellspacing="2" cellpadding="2" border="0">
 </form>
-<form method="get" action="conexionVentas.php" role="form">
+<form method="get" action="insertarFactura.php" role="form">
 	<div class="form-group">
 		<label for="fact">Codigo de la factura:</label>
 		<input type="text" name="codigo_factura" class="form-control" id="fact"  placeholder="Introduce el codigo de la factura"> <br>
@@ -28,7 +28,7 @@
 <br>
 <br>
 	<div class="col-sm-12">
-		<button type="submit" class="btn btn-prymary"><a href="https://www.youtube.com/?gl=CO&hl=es-419">enviar</a></button>
+		<button type="submit" class="btn btn-prymary">enviar</button>
 	</div>	
 
 </form>

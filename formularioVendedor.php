@@ -24,7 +24,7 @@
 <br>
 <br>
 	<div class="col-sm-12">
-		<button type="submit" class="btn btn-prymary"><a href="https://www.youtube.com/?gl=CO&hl=es-419">enviar</a></button>
+		<button type="submit" class="btn btn-prymary">enviar</button>
 	</div>	
 
 </form>
