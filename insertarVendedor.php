@@ -18,9 +18,9 @@
 	   $v_cod_vendedor=$_GET["codigo_vendedor"];
 	   $v_nom_vendedor="'".$_GET["nombre_vendedor"]."'";
 
-	$conexion = pg_connect("host=localhost port=5432 dbname=VENTAS user=postgres password=123"); //conexion
+	$conexion = mysqli_connect("mysql.webcindario.com","pruebabdkl","salcedo99","pruebabdkl"); //conexion
 	$sql ="INSERT INTO vendedor VALUES($v_cod_vendedor, $v_nom_vendedor)";
-	$result = pg_Exec($conexion, $sql);
+	$result = mysqli_query($conexion, $sql);
 	if ($result) {
 		echo "inserción exitosa";
 	}else{

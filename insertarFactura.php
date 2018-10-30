@@ -20,11 +20,11 @@
    $v_valor_factura=$_GET["valor_factura"];
 
 
-$conexion = pg_connect("host=localhost port=5432 dbname=VENTAS user=postgres password=123"); //conexion
+$conexion = mysqli_connect("mysql.webcindario.com","pruebabdkl","salcedo99","pruebabdkl"); //conexion
 
 $sql ="INSERT INTO factura VALUES($v_cod_factura, $v_valor_factura, $v_cod_cliente)";
 
-$result = pg_Exec($conexion, $sql);
+$result = mysqli_query($conexion, $sql);
 
 if ($result) {
 	echo "insercion exitosa";

@@ -18,9 +18,9 @@
 	   $v_cod_f_pago=$_GET["codigo_f_pago"];
 	   $v_nom_f_pago="'".$_GET["nombre_f_pago"]."'";
 
-	$conexion = pg_connect("host=localhost port=5432 dbname=VENTAS user=postgres password=123"); //conexion
+	$conexion = mysqli_connect("mysql.webcindario.com","pruebabdkl","salcedo99","pruebabdkl"); //conexion
 	$sql ="INSERT INTO f_pago VALUES($v_cod_f_pago, $v_nom_f_pago)";
-	$result = pg_Exec($conexion, $sql);
+	$result = mysqli_query($conexion, $sql);
 	if ($result) {
 		echo "Inserción exitosa";
 	}else{

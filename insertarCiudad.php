@@ -17,10 +17,9 @@
 		//campos
 	   $v_cod_ciudad=$_GET["codigo_ciudad"];
 	   $v_nom_ciudad="'".$_GET["nombre_ciudad"]."'";
-
-	$conexion = pg_connect("host=localhost port=5432 dbname=VENTAS user=postgres password=123"); //conexion
+	$conexion = mysqli_connect("mysql.webcindario.com","pruebabdkl","salcedo99","pruebabdkl"); //conexion
 	$sql ="INSERT INTO ciudad VALUES($v_cod_ciudad, $v_nom_ciudad)";
-	$result = pg_Exec($conexion, $sql);
+	$result = mysqli_query($conexion, $sql);
 	if ($result) {
 		echo "Inserción exitosa";
 	}else{
