@@ -2,15 +2,39 @@
 <head>
 	<title> Insercion de Datos </title> 
 	<meta charset="utf-8">
+	  <link rel="stylesheet" type="text/css" href="CSS1.css"> 
 </head>
 <body>
+<div class="wrap">
+    <span class="decor"></span>
+    <nav>
+      <ul class="primary">
+        <li>
+          <a href="">Insertar</a>
+          <ul class="sub">
+            <li><a href="formularioVendedor.php">Vendedor</a></li>
+            <li><a href="formularioCiudad.php">Ciudad</a></li>
+            <li><a href="formularioFPago.php">Forma de pago</a></li>
+            <li><a href="formularioCliente.php">Cliente</a></li>
+            <li><a href="formularioFactura.php">Factura</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">Consultar</a>
+          <ul class="sub">
+            <li><a href="consultarPrincipal.php">Generales</a></li>
+            <li><a href="ComprasClientes.php">Compras por Clientes</a></li>
+            <li><a href="VentasFPago.php">Ventas por forma de pago</a></li>
+            <li><a href="VentasVendedor.php">Ventas por vendedor</a></li>
+            <li><a href="VentasCiudad.php">Ventas por ciudad</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    </div>
 	<form>
-	   <CENTER><td colspan="2" align="center"><h2>ADICIONANDO FORMAS DE PAGO</h2></td></center>
+	   <CENTER><td colspan="2" align="center" style="font-family:Times new roman;"><h3>ADICIONANDO FORMAS DE PAGO</h3></td></center>
 	   <table align="center" width="255" cellspacing="2" cellpadding="2" border="0">
-	</form>
-	<form>
-		 <LEFT><td colspan="2" align="left"><h3> Forma de pago Insertado </h3></td></LEFT>
-		<table align="left" width="100" cellspacing="2" cellpadding="2" border="0">
 	</form>
 
 	<?php
@@ -28,7 +52,7 @@
 	}
 	echo"<BR>";
 	?>
-	<a href="insertarDatos.php">regresar</a>
+<a class="btn btn-default" href="indexPrueba.php" role="button">Regresar</a>
 
 </form>
 </body>
